@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Book with Me!";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="site.js"></script>
+</head>
+<body>
+
+    <h2>See how much your project would cost:</h2>
+
+    <div>
+        <label for="hours">Number of Hours Needed:</label>
+        <input type="number" id="hours" min="0" step="1" required>
+    </div>
+    <br />
+    <div>
+        <label for="rate">Hourly Rate:</label>
+        <input type="text" id="rate" value="$50" readonly>
+    </div>
+    <br />
+    <div>
+        <button id="calculate">Calculate Total</button>
+    </div>
+    <br />
+    <div>
+        <label for="total">Total:</label>
+        <input type="text" id="total" readonly>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+</html>
+
